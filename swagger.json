@@ -1,0 +1,46 @@
+{
+  "definitions": {
+    "Room": {
+      "x-oad-type": "object",
+      "type": "object",
+      "properties": {
+        "Adults": {
+          "x-oad-type": "integer",
+          "type": "integer",
+          "title": "Adults in room",
+          "format": "int32",
+          "default": 2
+        },
+        "Children": {
+          "x-oad-type": "array",
+          "type": "array",
+          "items": {
+            "x-oad-type": "integer",
+            "type": "integer",
+            "title": "Child Age",
+            "format": "int32"
+          }
+        }
+      },
+      "additionalProperties": {},
+      "required": [
+        "Adults"
+      ]
+    }
+  },
+  "info": {
+    "title": "EasyPull",
+    "version": "1.0.0",
+    "description": "EasyPull idiso specs",
+    "contact": {
+      "name": "Idiso Integrations Tech Support",
+      "email": "integrations.tech.support@idiso.com"
+    }
+  },
+  "host": "www.idiso.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0"
+}
